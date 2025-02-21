@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <title>详情页</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("images/bg-home.jpg") no-repeat center center;
+            background-size: cover;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        .timeline {
+            width: 80%;
+            margin: 100px auto;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+        }
+        .step {
+            text-align: center;
+            position: relative;
+            color: #fff;
+        }
+        .dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #bbb;
+            margin: 0 auto;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+        .dot:hover {
+            background: #f8b400; /* 橘黄色 */
+        }
+        .step-label {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        /* 进度轴的横线 */
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            width: 80%;
+            height: 2px;
+            background: #ccc;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+<div class="timeline">
+    <!-- 八个圆点 -->
+    <div class="step">
+        <div class="dot"></div>
+        <div class="step-label">进度1</div>
+    </div>
+    <div class="step">
+        <div class="dot"></div>
+        <div class="step-label">进度2</div>
+    </div>
+    <div class="step">
+        <div class="dot"></div>
+        <div class="step-label">进度3</div>
+    </div>
+    <div class="step">
+        <div class="dot"></div>
+        <div class="step-label">进度4</div>
+    </div>
+    <div class="step">
+        <div class="dot"></div>
+        <div class="step-label">进度5</div>
+    </div>
+    <div class="step">
+        <div class="dot"></div>
+        <div class="step-label">进度6</div>
+    </div>
+    <div class="step">
+        <div class="dot"></div>
+        <div class="step-label">进度7</div>
+    </div>
+    <div class="step">
+        <div class="dot"></div>
+        <div class="step-label">进度8</div>
+    </div>
+</div>
+</body>
+</html>

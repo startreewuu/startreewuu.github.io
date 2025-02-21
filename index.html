@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <title>首页</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("images/bg-home.jpg") no-repeat center center;
+            background-size: cover;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        .leaf-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .leaf-container a img {
+            width: 100px;
+            transition: transform 0.3s, filter 0.3s;
+            cursor: pointer;
+        }
+        .leaf-container a img:hover {
+            content: url("images/leaf-yellow.png");
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+<div class="leaf-container">
+    <!-- 点击叶子跳转到详情页 -->
+    <a href="./detail.html ">
+        <img src="images/leaf-green.png" alt="leaf" />
+    </a >
+</div>
+</body>
+</html>
