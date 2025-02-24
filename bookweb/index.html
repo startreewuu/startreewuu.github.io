@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电子书翻页效果</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="book">
+    <!-- 封面 -->
+    <div class="page cover active" id="cover" style="background-image: url('images/cover.svg');">
+        <img src="images/leaf1.png" class="leaf" id="leaf">
+        <p class="tip">点击查看雪茄烟笔记</p >
+    </div>
+
+    <!-- 页面 1 -->
+    <div class="page" id="page1" style="background-image: url('images/page1.svg');">
+        <div class="buttons">
+            <button onclick="goToPage(0)">上一页</button>
+            <button onclick="goToPage(2)">下一页</button>
+        </div>
+    </div>
+
+    <!-- 页面 2 -->
+    <div class="page" id="page2" style="background-image: url('images/page2.svg');">
+        <div class="buttons">
+            <button onclick="goToPage(1)">上一页</button>
+            <button onclick="goToPage(3)">下一页</button>
+        </div>
+    </div>
+
+    <!-- 页面 3 -->
+    <div class="page" id="page3" style="background-image: url('images/page3.svg');">
+        <div class="buttons">
+            <button onclick="goToPage(2)">上一页</button>
+            <button onclick="goToPage(0)">回到封面</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
